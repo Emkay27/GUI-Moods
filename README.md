@@ -6,4 +6,5 @@
 
 ### On this we make use of the JFrame, JRadioButton, JOptionPane and we also implement the ActionListener.
 
+### Below is the illustration of what the program looks like when it's run.
 ![](illustration.gif)
