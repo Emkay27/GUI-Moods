@@ -14,7 +14,8 @@ public class RadioButtonFrame extends JFrame implements ActionListener {
     ImageIcon sickImage;
     ImageIcon happyImage;
 
-    public RadioButtonFrame() {
+    public RadioButtonFrame() { // We will use the "this" keyword instead of the frame keyword because we have extended the JFrame 
+                                //so we are dealing with the current instances.
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //So that the frame can close properly.
         this.setLayout(new FlowLayout()); //Create a flow layout.
@@ -48,22 +49,23 @@ public class RadioButtonFrame extends JFrame implements ActionListener {
         sickButton.addActionListener(this);
         happyButton.addActionListener(this);
 
+        //Now add the buttons to the frame.
         this.add(sadButton);
         this.add(sickButton);
         this.add(happyButton);
-        this.setIconImage(happyImage.getImage());
+        this.setIconImage(happyImage.getImage()); // This sets the icon of the GUI.
 
         this.pack();
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        this.setLocationRelativeTo(null); // Make the GUI appear at centre.
+        this.setVisible(true); // Now make everything visible on the frame.
 
     }
 
     public void actionPerformed(ActionEvent e) {
 
-        if (e.getSource() == sadButton) {
+        if (e.getSource() == sadButton) { // Get the source and compare it to the action event of the button.
             JOptionPane.showMessageDialog(null, "Oh you are Sad, lets go play FIFA.", "Sad",
-                    JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.INFORMATION_MESSAGE); // Show a pop up that has the information.
         }
 
         else if (e.getSource() == sickButton) {
