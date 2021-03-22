@@ -5,3 +5,5 @@
 ## Description
 
 ### On this we make use of the JFrame, JRadioButton, JOptionPane and we also implement the ActionListener.
+
+![](illustration.gif)
