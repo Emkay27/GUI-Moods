@@ -2,5 +2,5 @@ language: java
 jdk: oraclejdk16
 
 install: true
-script: ./mvnw clean install
+script: ./gradlew assemble
 
