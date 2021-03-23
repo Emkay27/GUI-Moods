@@ -1,5 +1,9 @@
-language: java
-jdk: 
-  - oraclejdk16
+# language: java
+# jdk: 
+#   - oraclejdk16
 
-script: ./mvnw clean install
+# script: ./mvnw clean install
+
+language: java
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
