@@ -1,8 +1,7 @@
 language: java
-    exclude: 
-           -ant
-           
-           
+
+scripts: ./mnv clean install
+
 jdk:
   - oraclejdk8
   - oraclejdk11
