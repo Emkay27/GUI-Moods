@@ -1,8 +1,6 @@
-os: windows
-
 language: java
 jdk: oraclejdk16
 
-install: true
-script: ./gradlew assemble
+# install: true
+# script: ./gradlew assemble
 
