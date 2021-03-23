@@ -9,5 +9,5 @@ install:
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 // travis.yml
-before_install:
+before_script:
   - chmod +x mvnw
