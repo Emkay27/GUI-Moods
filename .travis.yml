@@ -1,8 +1,7 @@
 language: java
-install: ant deps
-
-ant test
-
+    exclude: 
+           -ant
+           
 jdk:
   - oraclejdk8
   - oraclejdk11
