@@ -1,6 +1,6 @@
 language: java
 
-scripts: ./mnv clean install
+scripts: ./gradlew assemble
 
 jdk:
   - oraclejdk8
